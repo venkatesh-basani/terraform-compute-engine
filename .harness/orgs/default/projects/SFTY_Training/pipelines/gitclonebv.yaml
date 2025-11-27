@@ -7,8 +7,7 @@ pipeline:
   properties:
     ci:
       codebase:
-        connectorRef: bvgit
-        repoName: terraform-compute-engine
+        repoName: test-bv
         build: <+input>
         sparseCheckout: []
   stages:
@@ -35,7 +34,8 @@ pipeline:
                   name: GitClone_1
                   identifier: GitClone_1
                   spec:
-                    repoName: test-bv
+                    connectorRef: bvgit
+                    repoName: terraform-compute-engine
                     build:
                       type: branch
                       spec:
