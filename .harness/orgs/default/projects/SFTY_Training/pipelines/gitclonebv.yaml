@@ -7,8 +7,7 @@ pipeline:
   properties:
     ci:
       codebase:
-        connectorRef: bvgit
-        repoName: terraform-compute-engine
+        repoName: test-bv
         build: <+input>
         sparseCheckout: []
   stages:
